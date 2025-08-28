@@ -13,15 +13,15 @@
     <title>Apocalypse-PH-05</title>
 </head>
 
-<body class="border-red-500 border-2 md:mx-[calc((100%-1400px)/2)]">
+<body class="md:mx-[calc((100%-1400px)/2)]">
     <!-- ---------- Heading Section ------------------ -->
     <div class="heading inter m-5 flex flex-col md:flex-row justify-between items-center">
         <div class="head-left flex">
-            <div class="head-left-img w-[40px] md:w-[50px]">
+            <div class="head-left-img w-[45px] md:w-[58px]">
                 <img src="./assets/logo.png" alt="">
             </div>
             <div
-                class="head-left-name text-green-950 font-extrabold ml-2 flex items-center md:flex-col md:items-start gap-1 md:gap-0 text-xl md:text-base">
+                class="head-left-name text-green-950 font-extrabold ml-2 flex items-center md:flex-col md:items-start gap-1 md:gap-0 text-2xl md:text-xl">
                 <h1>Emergency</h1>
                 <h1>Service</h1>
             </div>
@@ -38,13 +38,15 @@
                 <img src="./assets/coin.png" width="20px" alt="">
             </div>
             <div class="copy w-[100px] h-[35px] rounded-3xl flex gap-2 justify-center items-center bg-[#00A63E]">
-                <p class="text-sm text-white"> <span id="copy-count">2</span> copy</p>
+                <p class="text-sm text-white"> <span id="copy-count">0</span> copy</p>
             </div>
         </div>
     </div>
 
     <!-- ---------- Banner Section ------------------ -->
-    <section class="banner hind bg-green-800  text-white flex flex-col justify-center items-center gap-2 py-3">
+    <section
+        style="background: #006400; background: radial-gradient(circle, rgba(0, 100, 0, 1) 0%, rgba(0, 69, 38, 1) 50%);"
+        class="banner hind text-white flex flex-col justify-center items-center gap-2 py-3">
         <img src="./assets/logo-dark.png" class="w-[70px] md:w-[82px]" alt="">
         <p class="font-bold text-xl">জরুরি সেবা ডিরেক্টরি</p>
         <p class="max-w-[80%] text-center text-sm md:text-base">Government Emergency Services at Your Fingertip – A
@@ -55,9 +57,9 @@
 
     <!-- ---------- Service Section ------------------ -->
 
-    <div class="service-history flex flex-col md:flex-row m-5 justify-between gap-4">
-        <div class="services bg-[#F5FFF6] grid md:grid-cols-2 lg:grid-cols-3 gap-4 md:w-[70%] lg:w-[75%]">
-            <div class="card bg-white p-4 border-2 border-gray-50 rounded-xl">
+    <div class="service-history flex flex-col md:flex-row m-5 justify-between gap-4 bg-[#F5FFF6]">
+        <div class="services grid md:grid-cols-2 lg:grid-cols-3 gap-4 md:w-[70%] lg:w-[75%]">
+            <div class="card bg-white p-4 border-2 border-gray-100 shadow-lg rounded-xl">
                 <div class="card-up flex justify-between items-center ">
                     <img src="./assets/emergency.png" class="bg-[#FFE3E2] p-2 rounded-lg w-[38px] md:w-[45px]" alt="">
                     <i class="fa-regular fa-heart"></i>
@@ -68,8 +70,32 @@
                     </h1>
                     <h2 class="text-gray-500 text-xl text-center lg:text-left">National Emergency</h2>
                     <div class="flex lg:flex-col items-center my-1 md:my-3 justify-between lg:items-start">
-                        <h1 class="service-num text-[40px] font-bold">999</h1>
+                        <h1 class="service-num text-[35px] font-bold">999</h1>
                         <h2 class="text-gray-500 text-base bg-[#F2F2F2] w-fit py-2 px-4 rounded-3xl">সার্বজনীন</h2>
+                    </div>
+
+                    <div class="button flex justify-between">
+                        <button
+                            class="btn-copy w-[49%] border-gray-100 border-2 bg-white py-2 hover:bg-green-300 text-gray-500 rounded-xl" ><i
+                                class="fa-regular fa-copy rotate-x-180 "></i> Copy</button>
+                        <button
+                            class="btn-call w-[49%] border-green-500 border-2 bg-green-500 py-2 text-white hover:bg-green-800 rounded-xl"><i
+                                class="fa-solid fa-phone text-sm"></i> Call</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-white p-4 border-2 border-gray-100 shadow-lg rounded-xl">
+                <div class="card-up flex justify-between items-center ">
+                    <img src="./assets/police.png" class="bg-[#FFE3E2] p-2 rounded-lg w-[38px] md:w-[45px]" alt="">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="card-mid">
+                    <h1 class="service-name text-2xl font-extrabold mt-1 md:mt-4 text-center lg:text-left">পুলিশ
+                    </h1>
+                    <h2 class="text-gray-500 text-xl text-center lg:text-left">Police</h2>
+                    <div class="flex lg:flex-col items-center my-1 md:my-3 justify-between lg:items-start">
+                        <h1 class="service-num text-[35px] font-bold">999</h1>
+                        <h2 class="text-gray-500 text-base bg-[#F2F2F2] w-fit py-2 px-4 rounded-3xl">পুলিশ</h2>
                     </div>
 
                     <div class="button flex justify-between">
@@ -82,19 +108,17 @@
                     </div>
                 </div>
             </div>
-            <div class="card bg-white p-4 border-2 border-gray-50 rounded-xl">
+            <div class="card bg-white p-4 border-2 border-gray-100 shadow-lg rounded-xl">
                 <div class="card-up flex justify-between items-center ">
-                    <img src="./assets/emergency.png" class="bg-[#FFE3E2] p-2 rounded-lg w-[38px] md:w-[45px]" alt="">
+                    <img src="./assets/fire-service.png" class="bg-[#FFE3E2] p-2 rounded-lg w-[38px] md:w-[45px]" alt="">
                     <i class="fa-regular fa-heart"></i>
                 </div>
                 <div class="card-mid">
-                    <h1 class="service-name text-2xl font-extrabold mt-1 md:mt-4 text-center lg:text-left">জাতীয় জরুরি
-                        সেবা
-                    </h1>
-                    <h2 class="text-gray-500 text-xl text-center lg:text-left">National Emergency</h2>
+                    <h1 class="service-name text-2xl font-extrabold mt-1 md:mt-4 text-center lg:text-left">ফায়ার সার্ভিস</h1>
+                    <h2 class="text-gray-500 text-xl text-center lg:text-left">Fire Service</h2>
                     <div class="flex lg:flex-col items-center my-1 md:my-3 justify-between lg:items-start">
-                        <h1 class="service-num text-[40px] font-bold">999</h1>
-                        <h2 class="text-gray-500 text-base bg-[#F2F2F2] w-fit py-2 px-4 rounded-3xl">সার্বজনীন</h2>
+                        <h1 class="service-num text-[35px] font-bold">999</h1>
+                        <h2 class="text-gray-500 text-base bg-[#F2F2F2] w-fit py-2 px-4 rounded-3xl">ফায়ার</h2>
                     </div>
 
                     <div class="button flex justify-between">
@@ -107,19 +131,17 @@
                     </div>
                 </div>
             </div>
-            <div class="card bg-white p-4 border-2 border-gray-50 rounded-xl">
+            <div class="card bg-white p-4 border-2 border-gray-100 shadow-lg rounded-xl">
                 <div class="card-up flex justify-between items-center ">
-                    <img src="./assets/emergency.png" class="bg-[#FFE3E2] p-2 rounded-lg w-[38px] md:w-[45px]" alt="">
+                    <img src="./assets/ambulance.png" class="bg-[#FFE3E2] p-2 rounded-lg w-[38px] md:w-[45px]" alt="">
                     <i class="fa-regular fa-heart"></i>
                 </div>
                 <div class="card-mid">
-                    <h1 class="service-name text-2xl font-extrabold mt-1 md:mt-4 text-center lg:text-left">জাতীয় জরুরি
-                        সেবা
-                    </h1>
-                    <h2 class="text-gray-500 text-xl text-center lg:text-left">National Emergency</h2>
+                    <h1 class="service-name text-2xl font-extrabold mt-1 md:mt-4 text-center lg:text-left">অ্যাম্বুলেন্স</h1>
+                    <h2 class="text-gray-500 text-xl text-center lg:text-left">Ambulance</h2>
                     <div class="flex lg:flex-col items-center my-1 md:my-3 justify-between lg:items-start">
-                        <h1 class="service-num text-[40px] font-bold">999</h1>
-                        <h2 class="text-gray-500 text-base bg-[#F2F2F2] w-fit py-2 px-4 rounded-3xl">সার্বজনীন</h2>
+                        <h1 class="service-num text-[35px] font-bold">1994-999999</h1>
+                        <h2 class="text-gray-500 text-base bg-[#F2F2F2] w-fit py-2 px-4 rounded-3xl">স্বাস্থ্য</h2>
                     </div>
 
                     <div class="button flex justify-between">
@@ -132,19 +154,17 @@
                     </div>
                 </div>
             </div>
-            <div class="card bg-white p-4 border-2 border-gray-50 rounded-xl">
+            <div class="card bg-white p-4 border-2 border-gray-100 shadow-lg rounded-xl">
                 <div class="card-up flex justify-between items-center ">
                     <img src="./assets/emergency.png" class="bg-[#FFE3E2] p-2 rounded-lg w-[38px] md:w-[45px]" alt="">
                     <i class="fa-regular fa-heart"></i>
                 </div>
                 <div class="card-mid">
-                    <h1 class="service-name text-2xl font-extrabold mt-1 md:mt-4 text-center lg:text-left">জাতীয় জরুরি
-                        সেবা
-                    </h1>
-                    <h2 class="text-gray-500 text-xl text-center lg:text-left">National Emergency</h2>
+                    <h1 class="service-name text-2xl font-extrabold mt-1 md:mt-4 text-center lg:text-left">নারী ও শিশু সহায়তা</h1>
+                    <h2 class="text-gray-500 text-xl text-center lg:text-left">Women & Child Helpline</h2>
                     <div class="flex lg:flex-col items-center my-1 md:my-3 justify-between lg:items-start">
-                        <h1 class="service-num text-[40px] font-bold">999</h1>
-                        <h2 class="text-gray-500 text-base bg-[#F2F2F2] w-fit py-2 px-4 rounded-3xl">সার্বজনীন</h2>
+                        <h1 class="service-num text-[35px] font-bold">109</h1>
+                        <h2 class="text-gray-500 text-base bg-[#F2F2F2] w-fit py-2 px-4 rounded-3xl">সহায়তা</h2>
                     </div>
 
                     <div class="button flex justify-between">
@@ -157,19 +177,17 @@
                     </div>
                 </div>
             </div>
-            <div class="card bg-white p-4 border-2 border-gray-50 rounded-xl">
+            <div class="card bg-white p-4 border-2 border-gray-100 shadow-lg rounded-xl ">
                 <div class="card-up flex justify-between items-center ">
                     <img src="./assets/emergency.png" class="bg-[#FFE3E2] p-2 rounded-lg w-[38px] md:w-[45px]" alt="">
                     <i class="fa-regular fa-heart"></i>
                 </div>
                 <div class="card-mid">
-                    <h1 class="service-name text-2xl font-extrabold mt-1 md:mt-4 text-center lg:text-left">জাতীয় জরুরি
-                        সেবা
-                    </h1>
-                    <h2 class="text-gray-500 text-xl text-center lg:text-left">National Emergency</h2>
+                    <h1 class="service-name text-2xl font-extrabold mt-1 md:mt-4 text-center lg:text-left">দুদক</h1>
+                    <h2 class="text-gray-500 text-xl text-center lg:text-left">Anti-Corruption</h2>
                     <div class="flex lg:flex-col items-center my-1 md:my-3 justify-between lg:items-start">
-                        <h1 class="service-num text-[40px] font-bold">999</h1>
-                        <h2 class="text-gray-500 text-base bg-[#F2F2F2] w-fit py-2 px-4 rounded-3xl">সার্বজনীন</h2>
+                        <h1 class="service-num text-[35px] font-bold">106</h1>
+                        <h2 class="text-gray-500 text-base bg-[#F2F2F2] w-fit py-2 px-4 rounded-3xl">সরকারি</h2>
                     </div>
 
                     <div class="button flex justify-between">
@@ -182,19 +200,17 @@
                     </div>
                 </div>
             </div>
-            <div class="card bg-white p-4 border-2 border-gray-50 rounded-xl ">
+            <div class="card bg-white p-4 border-2 border-gray-100 shadow-lg rounded-xl">
                 <div class="card-up flex justify-between items-center ">
                     <img src="./assets/emergency.png" class="bg-[#FFE3E2] p-2 rounded-lg w-[38px] md:w-[45px]" alt="">
                     <i class="fa-regular fa-heart"></i>
                 </div>
                 <div class="card-mid">
-                    <h1 class="service-name text-2xl font-extrabold mt-1 md:mt-4 text-center lg:text-left">জাতীয় জরুরি
-                        সেবা
-                    </h1>
-                    <h2 class="text-gray-500 text-xl text-center lg:text-left">National Emergency</h2>
+                    <h1 class="service-name text-2xl font-extrabold mt-1 md:mt-4 text-center lg:text-left">বিদ্যুৎ বিভ্রাট</h1>
+                    <h2 class="text-gray-500 text-xl text-center lg:text-left">Electricity Outage</h2>
                     <div class="flex lg:flex-col items-center my-1 md:my-3 justify-between lg:items-start">
-                        <h1 class="service-num text-[40px] font-bold">999</h1>
-                        <h2 class="text-gray-500 text-base bg-[#F2F2F2] w-fit py-2 px-4 rounded-3xl">সার্বজনীন</h2>
+                        <h1 class="service-num text-[35px] font-bold">16216</h1>
+                        <h2 class="text-gray-500 text-base bg-[#F2F2F2] w-fit py-2 px-4 rounded-3xl">বিদ্যুৎ</h2>
                     </div>
 
                     <div class="button flex justify-between">
@@ -207,19 +223,17 @@
                     </div>
                 </div>
             </div>
-            <div class="card bg-white p-4 border-2 border-gray-50 rounded-xl">
+            <div class="card bg-white p-4 border-2 border-gray-100 shadow-lg rounded-xl">
                 <div class="card-up flex justify-between items-center ">
-                    <img src="./assets/emergency.png" class="bg-[#FFE3E2] p-2 rounded-lg w-[38px] md:w-[45px]" alt="">
+                    <img src="./assets/brac.png" class="bg-[#FFE3E2] p-2 rounded-lg w-[38px] md:w-[45px]" alt="">
                     <i class="fa-regular fa-heart"></i>
                 </div>
                 <div class="card-mid">
-                    <h1 class="service-name text-2xl font-extrabold mt-1 md:mt-4 text-center lg:text-left">জাতীয় জরুরি
-                        সেবা
-                    </h1>
-                    <h2 class="text-gray-500 text-xl text-center lg:text-left">National Emergency</h2>
+                    <h1 class="service-name text-2xl font-extrabold mt-1 md:mt-4 text-center lg:text-left">ব্র্যাক</h1>
+                    <h2 class="text-gray-500 text-xl text-center lg:text-left">Brac</h2>
                     <div class="flex lg:flex-col items-center my-1 md:my-3 justify-between lg:items-start">
-                        <h1 class="service-num text-[40px] font-bold">999</h1>
-                        <h2 class="text-gray-500 text-base bg-[#F2F2F2] w-fit py-2 px-4 rounded-3xl">সার্বজনীন</h2>
+                        <h1 class="service-num text-[35px] font-bold">16445</h1>
+                        <h2 class="text-gray-500 text-base bg-[#F2F2F2] w-fit py-2 px-4 rounded-3xl">এনজিও</h2>
                     </div>
 
                     <div class="button flex justify-between">
@@ -232,19 +246,17 @@
                     </div>
                 </div>
             </div>
-            <div class="card bg-white p-4 border-2 border-gray-50 rounded-xl">
+            <div class="card bg-white p-4 border-2 border-gray-100 shadow-lg rounded-xl">
                 <div class="card-up flex justify-between items-center ">
-                    <img src="./assets/emergency.png" class="bg-[#FFE3E2] p-2 rounded-lg w-[38px] md:w-[45px]" alt="">
+                    <img src="./assets/Bangladesh-Railway.png" class="bg-[#FFE3E2] p-2 rounded-lg w-[38px] md:w-[45px]" alt="">
                     <i class="fa-regular fa-heart"></i>
                 </div>
                 <div class="card-mid">
-                    <h1 class="service-name text-2xl font-extrabold mt-1 md:mt-4 text-center lg:text-left">জাতীয় জরুরি
-                        সেবা
-                    </h1>
-                    <h2 class="text-gray-500 text-xl text-center lg:text-left">National Emergency</h2>
+                    <h1 class="service-name text-2xl font-extrabold mt-1 md:mt-4 text-center lg:text-left">বাংলাদেশ রেলওয়ে</h1>
+                    <h2 class="text-gray-500 text-xl text-center lg:text-left">Bangladesh Railway</h2>
                     <div class="flex lg:flex-col items-center my-1 md:my-3 justify-between lg:items-start">
-                        <h1 class="service-num text-[40px] font-bold">999</h1>
-                        <h2 class="text-gray-500 text-base bg-[#F2F2F2] w-fit py-2 px-4 rounded-3xl">সার্বজনীন</h2>
+                        <h1 class="service-num text-[35px] font-bold">163</h1>
+                        <h2 class="text-gray-500 text-base bg-[#F2F2F2] w-fit py-2 px-4 rounded-3xl">পরিবহন</h2>
                     </div>
 
                     <div class="button flex justify-between">
@@ -253,31 +265,6 @@
                                 class="fa-regular fa-copy rotate-x-180 "></i> Copy</button>
                         <button
                             class="btn-call w-[49%] border-green-500 border-2 bg-green-500 py-2 text-white hover:bg-green-800 rounded-xl"><i
-                                class="fa-solid fa-phone text-sm"></i> Call</button>
-                    </div>
-                </div>
-            </div>
-            <div class="card bg-white p-4 border-2 border-gray-50 rounded-xl">
-                <div class="card-up flex justify-between items-center ">
-                    <img src="./assets/emergency.png" class="bg-[#FFE3E2] p-2 rounded-lg w-[38px] md:w-[45px]" alt="">
-                    <i class="fa-regular fa-heart"></i>
-                </div>
-                <div class="card-mid">
-                    <h1 class="service-name text-2xl font-extrabold mt-1 md:mt-4 text-center lg:text-left">জাতীয় জরুরি
-                        সেবা
-                    </h1>
-                    <h2 class="text-gray-500 text-xl text-center lg:text-left">National Emergency</h2>
-                    <div class="flex lg:flex-col items-center my-1 md:my-3 justify-between lg:items-start">
-                        <h1 class="service-num text-[40px] font-bold">999</h1>
-                        <h2 class="text-gray-500 text-base bg-[#F2F2F2] w-fit py-2 px-4 rounded-3xl">সার্বজনীন</h2>
-                    </div>
-
-                    <div class="button flex justify-between">
-                        <button
-                            class="btn-copy w-[49%] border-gray-100 border-2 bg-white py-2 hover:bg-green-300 text-gray-500 rounded-xl"><i
-                                class="fa-regular fa-copy rotate-x-180 "></i> Copy</button>
-                        <button
-                            id="btn-call" class="w-[49%] border-green-500 border-2 bg-green-500 py-2 text-white hover:bg-green-800 rounded-xl"><i
                                 class="fa-solid fa-phone text-sm"></i> Call</button>
                     </div>
                 </div>
@@ -285,7 +272,7 @@
         </div>
 
         <!-- --------------- Call History Section ----------------- -->
-        <div id="call-history" class="bg-white p-4 border-2 border-gray-50 rounded-xl md:w-[30%] lg:w-[25%]">
+        <div id="call-history" class="bg-white p-4 border-2 border-gray-100 shadow-xl rounded-xl md:w-[30%] lg:w-[25%]">
             <div class="flex justify-between items-center my-3">
                 <div class="flex gap-2 items-center">
                     <i class="fa-regular fa-clock text-2xl"></i>

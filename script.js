@@ -12,14 +12,17 @@ for (const call of calls) {
             alert("আপনার একাউন্টে পর্যাপ্ত পরিমাণ ব্যালেন্স নেই!");
         }
         else {
-            document.getElementById("coin-count").innerText = totalCoin - 20;
-
+                       
             let card = call.closest(".card");
             const data = {
                 name: card.querySelector(".service-name").innerText,
                 num: card.querySelector(".service-num").innerText,
                 time: new Date().toLocaleTimeString()
             }
+
+        if(confirm("Calling " + data.num  + "\n" + data.name + " সংযোগ করা হচ্ছে ..."))
+        {
+            document.getElementById("coin-count").innerText = totalCoin - 20;
             // console.log(data);
             callHistory.push(data);
 
@@ -34,6 +37,9 @@ for (const call of calls) {
             </div>
             `
             document.getElementById("call-history").appendChild(div);
+
+        }
+
         }
     })
 }
@@ -46,8 +52,20 @@ for (const copy of copies) {
     copy.addEventListener('click', function (f) {
         const totalCopy = parseInt(document.getElementById("copy-count").innerText);
         // console.log(totalCopy);
-        document.getElementById("copy-count").innerText = totalCopy + 1;
-        alert("কপি করা হয়েছে!");
+        if(confirm(copy.closest(".card").querySelector(".service-num").innerText + " কপি করা হয়েছে!"))
+        {
+            document.getElementById("copy-count").innerText = totalCopy + 1;   
+            navigator.clipboard.writeText(copy.closest(".card").querySelector(".service-num").innerText);
+        }    
+    })
+}
+
+const hearts = document.getElementsByClassName("fa-heart");
+
+for (const heart of hearts) {
+    heart.addEventListener('click', function (f) {
+        const totalHeart = parseInt(document.getElementById("heart-count").innerText);
+        document.getElementById("heart-count").innerText = totalHeart + 1;
     })
 }
 
