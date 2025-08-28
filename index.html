@@ -29,36 +29,35 @@
         <div class="head-right flex gap-3">
             <div style="background-color: rgba(65, 255, 107, 0.1)"
                 class="heart w-[100px] h-[35px] rounded-3xl flex gap-2 justify-center items-center">
-                <h1 class="heart-count font-extrabold">0</h1>
+                <h1 id="heart-count" class="font-extrabold">0</h1>
                 <img src="./assets/heart.png" width="20px" alt="">
             </div>
             <div style="background-color: rgba(65, 255, 107, 0.1)"
                 class="coin w-[100px] h-[35px] rounded-3xl flex gap-2 justify-center items-center">
-                <h1 class="heart-count font-extrabold">100</h1>
+                <h1 id="coin-count" class="font-extrabold">100</h1>
                 <img src="./assets/coin.png" width="20px" alt="">
             </div>
             <div class="copy w-[100px] h-[35px] rounded-3xl flex gap-2 justify-center items-center bg-[#00A63E]">
-                <p class="text-sm text-white"> <span class="heart-count">2</span> copy</p>
+                <p class="text-sm text-white"> <span id="copy-count">2</span> copy</p>
             </div>
         </div>
     </div>
 
     <!-- ---------- Banner Section ------------------ -->
-    <div
-        class="banner hind bg-green-900 text-white flex flex-col justify-center items-center gap-2 py-3">
+    <section class="banner hind bg-green-800  text-white flex flex-col justify-center items-center gap-2 py-3">
         <img src="./assets/logo-dark.png" class="w-[70px] md:w-[82px]" alt="">
         <p class="font-bold text-xl">জরুরি সেবা ডিরেক্টরি</p>
         <p class="max-w-[80%] text-center text-sm md:text-base">Government Emergency Services at Your Fingertip – A
-            Project by Government of the People’s Republic of Bangladesh</p>
-    </div>
+            Project by Government of the People’s Republic of Bangladesh
+        </p>
+    </section>
 
 
     <!-- ---------- Service Section ------------------ -->
 
     <div class="service-history flex flex-col md:flex-row m-5 justify-between gap-4">
-        <div
-        class="services bg-[#F5FFF6] grid md:grid-cols-2 lg:grid-cols-3 gap-4 md:w-[70%] lg:w-[75%]">
-        <div class="card bg-white p-4 border-2 border-gray-50 rounded-xl">
+        <div class="services bg-[#F5FFF6] grid md:grid-cols-2 lg:grid-cols-3 gap-4 md:w-[70%] lg:w-[75%]">
+            <div class="card bg-white p-4 border-2 border-gray-50 rounded-xl">
                 <div class="card-up flex justify-between items-center ">
                     <img src="./assets/emergency.png" class="bg-[#FFE3E2] p-2 rounded-lg w-[38px] md:w-[45px]" alt="">
                     <i class="fa-regular fa-heart"></i>
@@ -278,7 +277,7 @@
                             class="btn-copy w-[49%] border-gray-100 border-2 bg-white py-2 hover:bg-green-300 text-gray-500 rounded-xl"><i
                                 class="fa-regular fa-copy rotate-x-180 "></i> Copy</button>
                         <button
-                            class="btn-call w-[49%] border-green-500 border-2 bg-green-500 py-2 text-white hover:bg-green-800 rounded-xl"><i
+                            id="btn-call" class="w-[49%] border-green-500 border-2 bg-green-500 py-2 text-white hover:bg-green-800 rounded-xl"><i
                                 class="fa-solid fa-phone text-sm"></i> Call</button>
                     </div>
                 </div>
@@ -286,22 +285,21 @@
         </div>
 
         <!-- --------------- Call History Section ----------------- -->
-        <div class="call-history bg-white p-4 border-2 border-gray-50 rounded-xl md:w-[30%] lg:w-[25%]">
-            <div class="flex justify-between items-center ">
+        <div id="call-history" class="bg-white p-4 border-2 border-gray-50 rounded-xl md:w-[30%] lg:w-[25%]">
+            <div class="flex justify-between items-center my-3">
                 <div class="flex gap-2 items-center">
                     <i class="fa-regular fa-clock text-2xl"></i>
                     <h1 class="text-xl font-bold">Call History</h1>
                 </div>
-                <button class="btn-call-clear border-green-500 border-2 bg-green-500 py-2 text-white hover:bg-green-800 rounded-3xl px-6 font-semibold">Clear</button>
+                <button id="btn-call-clear"
+                    class="border-green-500 border-2 bg-green-500 py-2 text-white hover:bg-green-800 rounded-3xl px-6 font-semibold">Clear</button>
             </div>
-            
-
-
         </div>
-    </div>
 
     </div>
 
+
+    <script src="./script.js"></script>
 </body>
 
 </html>
